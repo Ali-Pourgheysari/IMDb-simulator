@@ -1,0 +1,10 @@
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Properties.Resources.resources
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.csproj.GenerateResource.cache
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.csproj.CoreCompileInputs.cache
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\bin\Debug\IMDB.exe.config
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\bin\Debug\IMDB.exe
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\bin\Debug\IMDB.pdb
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.exe
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.pdb
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Form1.resources
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.csproj.AssemblyReference.cache
