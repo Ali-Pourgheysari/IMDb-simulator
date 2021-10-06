@@ -25,18 +25,22 @@ namespace IMDB
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtPass.Text != "" || txtUser.Text != "")
+            if (txtPass.Text != "" && txtUser.Text != "" && txtName.Text != "")
             {
                 if (Form1.UserList.FirstOrDefault(u => u.Username == txtUser.Text) == null)
                 {
-                    Form1.UserList.Add(new User() { Username = txtUser.Text, Password = txtPass.Text });
-                    MessageBox.Show("You have been registered succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form1.UserList.Add(new User() { Username = txtUser.Text, Password = txtPass.Text, Name = txtName.Text });
+                    MessageBox.Show("You are registered succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DialogResult = DialogResult.OK;
                 }
                 else
                 {
                     MessageBox.Show("This user has already been registered! Please choose another Username.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            else
+            {
+                MessageBox.Show("All fields are required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

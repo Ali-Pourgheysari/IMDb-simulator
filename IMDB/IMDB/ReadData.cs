@@ -16,8 +16,12 @@ namespace IMDB
 
         public ReadData()
         {
-            string DocumentAddress = Application.StartupPath;
-            string NewAddress = DocumentAddress.Remove(DocumentAddress.Length - 19);
+            ReadFiles();
+        }
+
+        public void ReadFiles()
+        {
+            string NewAddress = Application.StartupPath.Remove(Application.StartupPath.Length - 19);
             string[] akas = File.ReadAllLines(NewAddress + "title.akas.txt");
             string[] ratings = File.ReadAllLines(NewAddress + "title.ratings.txt");
 
@@ -50,7 +54,7 @@ namespace IMDB
                     AverageRating = decimal.Parse(TempForAddingRatingsToList[1], CultureInfo.CurrentCulture),
                     NumVotes = int.Parse(TempForAddingRatingsToList[2]),
                     HasVoted = false
-                }) ;
+                });
             }
         }
 

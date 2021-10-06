@@ -34,11 +34,13 @@ namespace IMDB
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(10, 105);
+            this.txtPass.Location = new System.Drawing.Point(12, 166);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(220, 20);
             this.txtPass.TabIndex = 6;
@@ -46,7 +48,7 @@ namespace IMDB
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 85);
+            this.label2.Location = new System.Drawing.Point(180, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
@@ -54,7 +56,7 @@ namespace IMDB
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(10, 38);
+            this.txtUser.Location = new System.Drawing.Point(12, 99);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(220, 20);
             this.txtUser.TabIndex = 7;
@@ -62,7 +64,7 @@ namespace IMDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 18);
+            this.label1.Location = new System.Drawing.Point(177, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 5;
@@ -70,7 +72,7 @@ namespace IMDB
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(10, 166);
+            this.btnSubmit.Location = new System.Drawing.Point(12, 227);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(220, 23);
             this.btnSubmit.TabIndex = 3;
@@ -78,13 +80,31 @@ namespace IMDB
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(200, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Name";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(12, 42);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(220, 20);
+            this.txtName.TabIndex = 7;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(244, 206);
+            this.ClientSize = new System.Drawing.Size(244, 261);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSubmit);
@@ -105,5 +125,7 @@ namespace IMDB
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtName;
     }
 }

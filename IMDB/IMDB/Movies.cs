@@ -58,16 +58,19 @@ namespace IMDB
                 {
                     Vote form = new Vote((decimal) dataGridView1.CurrentRow.Cells[8].Value);
                     form.ShowDialog();
-                    foreach (var item in data.RatingsDataList)
+                    if(form.DialogResult == DialogResult.OK)
                     {
-                        if (item.Tconst == dataGridView1.CurrentRow.Cells[0].Value.ToString())
+                        foreach (var item in data.RatingsDataList)
                         {
-                            item.NumVotes++;
-                            item.HasVoted = true;
-                            break;
+                            if (item.Tconst == dataGridView1.CurrentRow.Cells[0].Value.ToString())
+                            {
+                                item.NumVotes++;
+                                item.HasVoted = true;
+                                break;
+                            }
                         }
+                        WriteInTheFile();
                     }
-                    WriteInTheFile();
                 }
                 else
                 {
