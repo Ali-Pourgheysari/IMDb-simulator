@@ -30,8 +30,6 @@ namespace IMDB
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnTopTen = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +41,8 @@ namespace IMDB
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTopTen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,25 +70,6 @@ namespace IMDB
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1003, 471);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // btnTopTen
-            // 
-            this.btnTopTen.Location = new System.Drawing.Point(898, 489);
-            this.btnTopTen.Name = "btnTopTen";
-            this.btnTopTen.Size = new System.Drawing.Size(117, 23);
-            this.btnTopTen.TabIndex = 3;
-            this.btnTopTen.Text = "Top ten";
-            this.btnTopTen.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(775, 489);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Vote";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Column1
             // 
@@ -168,6 +149,26 @@ namespace IMDB
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
             this.Column11.Visible = false;
+            // 
+            // btnTopTen
+            // 
+            this.btnTopTen.Location = new System.Drawing.Point(898, 489);
+            this.btnTopTen.Name = "btnTopTen";
+            this.btnTopTen.Size = new System.Drawing.Size(117, 23);
+            this.btnTopTen.TabIndex = 3;
+            this.btnTopTen.Text = "Top ten";
+            this.btnTopTen.UseVisualStyleBackColor = true;
+            this.btnTopTen.Click += new System.EventHandler(this.btnTopTen_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(775, 489);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Vote";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Movies
             // 

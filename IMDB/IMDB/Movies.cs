@@ -49,6 +49,7 @@ namespace IMDB
             dataGridView1.DataSource = innerjoin.ToList();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow != null)
@@ -90,6 +91,13 @@ namespace IMDB
                     writer.WriteLine($"{item.Tconst}\t{item.AverageRating}\t{item.NumVotes}");
                 }
             }
+        }
+
+        private void btnTopTen_Click(object sender, EventArgs e)
+        {
+           
+            TopTen form = new TopTen();
+            form.ShowDialog();
         }
     }
 }

@@ -76,6 +76,12 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TopTen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopTen.Designer.cs">
+      <DependentUpon>TopTen.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Vote.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopTen.resx">
+      <DependentUpon>TopTen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vote.resx">
       <DependentUpon>Vote.cs</DependentUpon>
