@@ -30,6 +30,8 @@ namespace IMDB
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnTopTen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +42,7 @@ namespace IMDB
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,13 +62,33 @@ namespace IMDB
             this.Column7,
             this.Column8,
             this.Column9,
-            this.Column10});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.Column10,
+            this.Column11});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1027, 512);
+            this.dataGridView1.Size = new System.Drawing.Size(1003, 471);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // btnTopTen
+            // 
+            this.btnTopTen.Location = new System.Drawing.Point(898, 489);
+            this.btnTopTen.Name = "btnTopTen";
+            this.btnTopTen.Size = new System.Drawing.Size(117, 23);
+            this.btnTopTen.TabIndex = 3;
+            this.btnTopTen.Text = "Top ten";
+            this.btnTopTen.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(775, 489);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Vote";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Column1
             // 
@@ -138,11 +161,21 @@ namespace IMDB
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
             // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "HasVoted";
+            this.Column11.HeaderText = "HasVoted";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Visible = false;
+            // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 512);
+            this.ClientSize = new System.Drawing.Size(1027, 516);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTopTen);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Movies";
@@ -154,8 +187,9 @@ namespace IMDB
         }
 
         #endregion
-
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnTopTen;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -166,5 +200,6 @@ namespace IMDB
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
     }
 }

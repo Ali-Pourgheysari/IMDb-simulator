@@ -9,9 +9,10 @@ using System.Windows.Forms;
 
 namespace IMDB
 {
-    class ReadData
+    public class ReadData
     {
-        public object gridviewcall;
+        public List<ImdbAkas> AkasDataList = new List<ImdbAkas>();
+        public List<ImdbRatings> RatingsDataList = new List<ImdbRatings>();
 
         public ReadData()
         {
@@ -20,8 +21,7 @@ namespace IMDB
             string[] akas = File.ReadAllLines(NewAddress + "title.akas.txt");
             string[] ratings = File.ReadAllLines(NewAddress + "title.ratings.txt");
 
-            List<ImdbAkas> AkasDataList = new List<ImdbAkas>();
-            List<ImdbRatings> RatingsDataList = new List<ImdbRatings>();
+
 
             string[] TempForAddingAkasToList;
             string[] TempForAddingRatingsToList;
@@ -40,33 +40,20 @@ namespace IMDB
                     Language = TempForAddingAkasToList[4],
                     Types = TempForAddingAkasToList[5],
                     Attributes = TempForAddingAkasToList[6],
-                    IsOriginalTitle = (int.Parse(TempForAddingAkasToList[7]) == 1) ? 1 : 0,
+                    IsOriginalTitle = (int.Parse(TempForAddingAkasToList[7]) == 1) ? 1 : 0
                 });
+
+
                 RatingsDataList.Add(new ImdbRatings()
                 {
                     Tconst = TempForAddingRatingsToList[0],
-                    AverageRating = float.Parse(TempForAddingRatingsToList[1], CultureInfo.InvariantCulture.NumberFormat),
-                    NumVotes = int.Parse(TempForAddingRatingsToList[2])
-                });
+                    AverageRating = decimal.Parse(TempForAddingRatingsToList[1], CultureInfo.CurrentCulture),
+                    NumVotes = int.Parse(TempForAddingRatingsToList[2]),
+                    HasVoted = false
+                }) ;
             }
-
-            var innerjoin = (from a in AkasDataList
-                             join r in RatingsDataList on a.TitleId equals r.Tconst
-                             select new
-                             {
-                                 a.TitleId,
-                                 a.Title,
-                                 a.Ordering,
-                                 a.Region,
-                                 a.Language,
-                                 a.Types,
-                                 a.Attributes,
-                                 a.IsOriginalTitle,
-                                 r.AverageRating,
-                                 r.NumVotes
-                             });
-            gridviewcall = innerjoin.ToList();
         }
+
 
 
 

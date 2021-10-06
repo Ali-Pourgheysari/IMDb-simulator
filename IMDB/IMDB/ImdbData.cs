@@ -22,7 +22,8 @@ namespace IMDB
     {
         //Title id
         public string Tconst { get; set; }
-        public float AverageRating { get; set; }
+        public decimal AverageRating { get; set; }
         public long NumVotes { get; set; }
+        public bool HasVoted { get; set; }
     }
 }

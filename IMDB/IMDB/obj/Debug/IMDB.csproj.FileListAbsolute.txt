@@ -9,3 +9,6 @@ C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\I
 C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Form1.resources
 C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.csproj.AssemblyReference.cache
 C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Movies.resources
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Login.resources
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.SignUp.resources
+C:\Users\SABA\Desktop\Term 3\Programming\phase1-gheysar007\IMDB\IMDB\obj\Debug\IMDB.Vote.resources
