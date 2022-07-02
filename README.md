@@ -10,13 +10,13 @@ As soon as you start the project you can see a form with tow buttons
 * sign up
 
 <p align="center">
-    <img src=".\screenshot\1 start page.PNG" width="600" higth="400" >
+    <img src=".\screenshot\1 start page.PNG" width="400" higth="300" >
 </p>
 
 for sign up you can see a form with three fields:
 
 <p align="center">
-    <img src=".\screenshot\2 signup.PNG" width="200" higth="300" >
+    <img src=".\screenshot\2 signup.PNG" width="250" higth="350" >
 </p>
 
 after you sign up you can login.
@@ -24,10 +24,19 @@ after you sign up you can login.
 ## Movie list
 Once you login you can see a list of movies. You can see top 10 movies and you can select a movie from the list and vote for it.
 
+* Movie list
 <p align="center">
     <img src=".\screenshot\3 main page.PNG" width="800" higth="800" >
-    <img src=".\screenshot\4 top ten.PNG" width="200" higth="600" >
-    <img src=".\screenshot\5 vote.PNG" width="600" higth="100" >
+</p>
+
+* Top 10 movies
+<p align="center">
+    <img src=".\screenshot\4 top ten.PNG" width="400" higth="300" >
+</p>
+
+* Vote
+<p align="center">
+    <img src=".\screenshot\5 vote.PNG" width="400" higth="50" >
 </p>
 
 <div dir="rtl" align='right'>
