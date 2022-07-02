@@ -1,4 +1,3 @@
-
 # IMDb vote system simulator
 This as an IMDb vote system simulator that can show ditails about the vote system. It uses tow files that downloaded from IMDb site:
 * title.akas.txt
@@ -33,7 +32,7 @@ Once you login you can see a list of movies. You can see top 10 movies and you c
 
 <div dir="rtl" align='right'>
 
-# توضیحات فارسی
+# توضیحات این فاز
 
 کارهای که میبایست برای این فاز انجام بدید: 
 1. یک اکانت داخل سایت [github](https://github.com/) درست کنید
