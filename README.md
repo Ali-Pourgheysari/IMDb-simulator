@@ -44,7 +44,7 @@ Once you log in you can see a list of movies. You can see the top 10 movies and 
 
 <div dir="rtl" align='right'>
 
-# توضیحات این فاز
+## توضیحات این فاز
 
 کارهای که میبایست برای این فاز انجام بدید: 
 1. یک اکانت داخل سایت [github](https://github.com/) درست کنید
