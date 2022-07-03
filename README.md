@@ -39,6 +39,9 @@ Once you login you can see a list of movies. You can see top 10 movies and you c
     <img src=".\screenshot\5 vote.PNG" width="400" higth="50" >
 </p>
 
+## Requirements
+* Visual studio
+
 <div dir="rtl" align='right'>
 
 # توضیحات این فاز
