@@ -1,28 +1,28 @@
 # IMDb vote system simulator
-This is an IMDb vote system simulator that can show ditails about the vote system. It uses tow files that downloaded from IMDb site:
+This is an IMDb vote system simulator that can show details about the voting system. It uses two files that were downloaded from the IMDb site:
 * title.akas.txt
 * title.ratings.txt
-<p>first file includes the information of a movie and second one includes the rating and votes of a movie. These tow files combine in the application and make the movie list that we can see in the application.</p>
+<p>first file includes the information about a movie and the second one includes the rating and votes of a movie. These two files combine in the application and make the movie list that we can see in the application.</p>
 
 ## start page
-As soon as you start the project you can see a form with tow buttons
-* login
+As soon as you start the project you can see a form with two buttons
+* Login
 * sign up
 
 <p align="center">
     <img src=".\screenshot\1 start page.PNG" width="400" higth="300" >
 </p>
 
-for sign up you can see a form with three fields:
+To sign up you can see a form with three fields:
 
 <p align="center">
     <img src=".\screenshot\2 signup.PNG" width="250" higth="350" >
 </p>
 
-after you sign up you can login.
+after you sign up you can log in.
 
 ## Movie list
-Once you login you can see a list of movies. You can see top 10 movies and you can select a movie from the list and vote for it.
+Once you log in you can see a list of movies. You can see the top 10 movies and you can select a movie from the list and vote for it.
 
 * Movie list
 <p align="center">
