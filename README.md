@@ -1,5 +1,5 @@
 # IMDb vote system simulator
-This as an IMDb vote system simulator that can show ditails about the vote system. It uses tow files that downloaded from IMDb site:
+This is an IMDb vote system simulator that can show ditails about the vote system. It uses tow files that downloaded from IMDb site:
 * title.akas.txt
 * title.ratings.txt
 <p>first file includes the information of a movie and second one includes the rating and votes of a movie. These tow files combine in the application and make the movie list that we can see in the application.</p>
